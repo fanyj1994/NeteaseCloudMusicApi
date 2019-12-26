@@ -8,7 +8,11 @@ describe('测试搜索是否正常', () => {
       keywords: '海阔天空',
       type: 1
     }
+<<<<<<< HEAD
     request.get({url: `${host}/search`,qs: qs}, (err, res, body) => {
+=======
+    request.get({url: `${host}/search`, qs: qs}, (err, res, body) => {
+>>>>>>> 9443bb25625a68d1e79ab25b24227393ddecd836
       if (!err && res.statusCode == 200) {
         body = JSON.parse(body)
         assert(body.result.songs[0].name === '海阔天空')

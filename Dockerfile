@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 FROM mhart/alpine-node:9
+=======
+FROM node:lts-alpine
+>>>>>>> 9443bb25625a68d1e79ab25b24227393ddecd836
 
 WORKDIR /app
 COPY . /app

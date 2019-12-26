@@ -8,7 +8,11 @@ describe('测试获取歌手专辑列表是否正常', () => {
       id: 32311
     }
 
+<<<<<<< HEAD
     request.get({url: `${host}/album`,qs: qs}, (err, res, body) => {
+=======
+    request.get({url: `${host}/album`, qs: qs}, (err, res, body) => {
+>>>>>>> 9443bb25625a68d1e79ab25b24227393ddecd836
       if (!err && res.statusCode == 200) {
         body = JSON.parse(body)
         assert(body.code === 200)
